@@ -1,5 +1,5 @@
-'use strict';
+'use strict'
 
-var AtoZList = require('./AtoZList');
+let AtoZList = require('./AtoZList')
 
-module.exports = AtoZList;
+module.exports = AtoZList
