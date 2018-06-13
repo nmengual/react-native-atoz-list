@@ -82,13 +82,12 @@ export default class FixedHeightWindowedListView extends Component {
       this.__renderCells(rows, bufferFirstRow, bufferLastRow)
     }
 
-    let totalRows = this.props.dataSource.getRowCount()
     rows.push(<View key='sp-bot' style={{ height: spacerBottomHeight }} />)
 
     return (
       <ScrollView
         scrollEventThrottle={50}
-        removeClippedSubviews={this.props.numToRenderAhead === 0 ? false : true}
+        removeClippedSubviews={false}
         automaticallyAdjustContentInsets={false}
         {...this.props}
         ref={ref => {
