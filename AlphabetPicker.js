@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, PanResponder } from 'react-native'
 import { AlphabetLetter } from './StyledComponents'
 
-const Alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+let Alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 export default class AlphabetPicker extends Component {
   constructor(props, context) {
     super(props, context)
